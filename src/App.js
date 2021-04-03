@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>Imagen de pantalla Desafio 1 - React JS Coderhouse</p>
         <a
           className="App-link"
           href="https://reactjs.org"
