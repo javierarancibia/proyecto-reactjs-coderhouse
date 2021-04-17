@@ -1,18 +1,20 @@
 import React from 'react'
-
+import ShoppingCart from '@material-ui/icons/ShoppingCart';
+import ThreeDRotation from '@material-ui/icons/ThreeDRotation'; 
 
 
 const CartWidget = () => {
     const CartStyle = {
         color:'white',
-        fontSize:20, 
-        marginTop: 5
+        fontSize: 55, 
+        marginTop: 5,
+        marginRight: 20
 
     }
 
     return (
         <div>
-            <h2 style= {CartStyle} className="mr-5">Carrito de Compras</h2>
+            <ShoppingCart style={CartStyle}/>
         </div>
     )
 }
