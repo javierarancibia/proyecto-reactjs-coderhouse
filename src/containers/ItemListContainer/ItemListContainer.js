@@ -10,51 +10,51 @@ const ItemListContainer = () => {
 
             const products = [
                 {
-                    img: './goku.png',
+                    img: './pintura1.jpg',
                     id: 1,
-                    name: 'Zapatillas',
-                    desc: 'Bacon ipsum dolor amet sausage burgdoggen rump cow, turkey meatball jowl boudin biltong pig. Rump pork loin spare ribs picanha tongue pork shankle short loin venison. Pastrami picanha boudin beef tongue shank shankle capicola burgdoggen swine ground round frankfurter andouille prosciutto. Salami pancetta ham porchetta jerky.',
-                    price: '$5.000',
+                    name: 'Grabado en Tela',
+                    desc: 'Bello y colorido grabado efectuado sobre tela, intervenido a mano con lápiz y brillo glitter, titulado "Please Sweetheart". Año 2011. Medidas 50 x 40 cms. (tela).',
+                    price: '$1.100.000',
                     stock: 6
                 },
                 {
-                    img: './fondo_sm.png',
+                    img: './pintura2.jpg',
                     id: 2,
-                    name: 'Pantalones',
-                    desc: 'Kevin frankfurter ham pork chop meatloaf. Hamburger bacon pastrami pork swine meatloaf. Venison ball tip brisket t-bone, bresaola boudin buffalo turducken short ribs. Kevin boudin pig, brisket venison andouille strip steak landjaeger ham hock cow frankfurter. Hamburger meatloaf pastrami, tenderloin prosciutto kevin pig porchetta drumstick chicken.',
-                    price: '$5.000',
+                    name: 'Grabado color "sin título" II',
+                    desc: 'Bello grabado a color numerado y firmado a mano por el destacado maestro chileno Benito Rojo. Dimensiones: 55 x 65 cms. (papel).',
+                    price: '$350.000',
                     stock: 8
                 },
                 {
-                    img: './fondo_sm.png',
+                    img: './pintura3.jpg',
                     id: 3,
-                    name: 'Sweaters',
-                    desc: 'Lorem ipsum',
-                    price: '$5.000',
+                    name: 'Grabado color "sin título" III',
+                    desc: 'Extraordinario grabado a color numerado y firmado a mano por el destacado maestro chileno Benito Rojo. Dimensiones: 56 x 67,5 cms. (papel).',
+                    price: '$350.000',
                     stock: 10
                 },
                 {
-                    img: './fondo_sm.png',
+                    img: './pintura4.jpg',
                     id: 4,
-                    name: 'Camisas',
-                    desc: 'Lorem ipsum',
-                    price: '$5.000',
+                    name: 'Serigrafía color "Prelunio en el volcán',
+                    desc: 'Extraordinaria serigrafía a color numerada y firmada a mano por el destacado artista cubano chileno, ganador del Premio Nacional de Artes Plásticas, Mario Carreño. Titulada "Prelunio en el volcán". Dimensiones: 75 x 55 cms. (papel).',
+                    price: '$750.000',
                     stock: 15
                 },
                 {
-                    img: './fondo_sm.png',
+                    img: './pintura5.jpg',
                     id: 5,
-                    name: 'Zapatos',
-                    desc: 'Lorem ipsum',
-                    price: '$5.000',
+                    name: 'Aguafuerte a color "Sin título"',
+                    desc: 'Hermosa aguafuerte a color firmada a mano por el destacado artista y profesor chileno Ernesto Banderas. Dimensiones: 24 x 21 cms. (papel) y con marco 53 x 50 cms.',
+                    price: '$200.000',
                     stock: 22
                 },
                 {
-                    img: './fondo_sm.png',
+                    img: './pintura6.jpg',
                     id: 6,
-                    name: 'Sombreros',
-                    desc: 'Kevin frankfurter ham pork chop meatloaf. Hamburger bacon pastrami pork swine meatloaf. Venison ball tip brisket t-bone, bresaola boudin buffalo turducken short ribs. Kevin boudin pig, brisket venison andouille strip steak landjaeger ham hock cow frankfurter. Hamburger meatloaf pastrami, tenderloin prosciutto kevin pig porchetta drumstick chicken.',
-                    price: '$5.000',
+                    name: 'Grabado a color intervenido a mano en gran formato "Pan"',
+                    desc: 'Representativo grabado a color intervenido a mano con lápiz pastel titulado "Pan". Firmado a mano por el destacado artista, galardonado con el Premio Nacional de Artes Plásticas, José Balmes Parramón. Año 2013. Dimensiones: 80 x 80 cms.',
+                    price: '$850.000',
                     stock: 12
                 }
             ]
@@ -78,7 +78,7 @@ const ItemListContainer = () => {
     return (
 
         <React.Fragment>
-            <h1 className="mt-5"> Bienvenidos Coders</h1>
+            <h1 className="mt-5"> Galeria Digital</h1>
             <div>
                 {datos.length > 0 ? <ItemList productos={datos}/> : <img src={Spinner} />}
             </div>

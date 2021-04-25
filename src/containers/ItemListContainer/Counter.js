@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Button } from 'react-bootstrap';
 
 const Counter = ({stock}) => {
     console.log(stock)
@@ -29,9 +30,9 @@ const Counter = ({stock}) => {
 
     return (
         <div>
-            <button onClick={restar} disabledRestar={disabledRestar}>-</button>
+            <Button onClick={restar} disabledRestar={disabledRestar} variant="outline-primary">-</Button>
             <p>{itemSuma}</p>
-            <button onClick={sumar} disabledSumar={disabledSumar}>+</button>
+            <Button onClick={sumar} disabledSumar={disabledSumar} variant="outline-danger">+</Button>
         </div>
     )
 }
