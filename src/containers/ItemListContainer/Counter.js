@@ -30,9 +30,9 @@ const Counter = ({stock}) => {
 
     return (
         <div>
-            <Button onClick={restar} disabledRestar={disabledRestar} variant="outline-primary">-</Button>
-            <p>{itemSuma}</p>
-            <Button onClick={sumar} disabledSumar={disabledSumar} variant="outline-danger">+</Button>
+            <Button onClick={restar} disabledRestar={disabledRestar} variant="outline-primary" className="py-2 px-4">-</Button>
+            <span className="mx-3 h3">{itemSuma}</span>
+            <Button onClick={sumar} disabledSumar={disabledSumar} variant="outline-danger" className="py-2 px-4">+</Button>
         </div>
     )
 }
