@@ -3,11 +3,12 @@ import { Card } from 'react-bootstrap';
 import Counter from './Counter'
 
 const items = ({img, cantidad, name, desc, price}) => {
-    
+
+       
     return (
 
-            <Card>
-                <Card.Img className="img-fluid" src={img} alt="imagen"/>
+            <Card className="mt-5">
+                <Card.Img className="img-fluid mt-5" src={img} style={{height: 450}} alt="imagen"/>
                 <Card.Body>
                 <Card.Title> {name} </Card.Title>
                 <Card.Text> {desc} </Card.Text>

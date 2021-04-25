@@ -10,23 +10,23 @@ const ItemListContainer = () => {
 
             const products = [
                 {
-                    img: './fondo_sm.png',
+                    img: './goku.png',
                     id: 1,
                     name: 'Zapatillas',
-                    desc: 'Lorem ipsum',
+                    desc: 'Bacon ipsum dolor amet sausage burgdoggen rump cow, turkey meatball jowl boudin biltong pig. Rump pork loin spare ribs picanha tongue pork shankle short loin venison. Pastrami picanha boudin beef tongue shank shankle capicola burgdoggen swine ground round frankfurter andouille prosciutto. Salami pancetta ham porchetta jerky.',
                     price: '$5.000',
                     stock: 6
                 },
                 {
-                    img: '../containers/assets/fondo_sm.png',
+                    img: './fondo_sm.png',
                     id: 2,
                     name: 'Pantalones',
-                    desc: 'Lorem ipsum',
+                    desc: 'Kevin frankfurter ham pork chop meatloaf. Hamburger bacon pastrami pork swine meatloaf. Venison ball tip brisket t-bone, bresaola boudin buffalo turducken short ribs. Kevin boudin pig, brisket venison andouille strip steak landjaeger ham hock cow frankfurter. Hamburger meatloaf pastrami, tenderloin prosciutto kevin pig porchetta drumstick chicken.',
                     price: '$5.000',
                     stock: 8
                 },
                 {
-                    img: '',
+                    img: './fondo_sm.png',
                     id: 3,
                     name: 'Sweaters',
                     desc: 'Lorem ipsum',
@@ -34,7 +34,7 @@ const ItemListContainer = () => {
                     stock: 10
                 },
                 {
-                    img: '',
+                    img: './fondo_sm.png',
                     id: 4,
                     name: 'Camisas',
                     desc: 'Lorem ipsum',
@@ -42,7 +42,7 @@ const ItemListContainer = () => {
                     stock: 15
                 },
                 {
-                    img: '',
+                    img: './fondo_sm.png',
                     id: 5,
                     name: 'Zapatos',
                     desc: 'Lorem ipsum',
@@ -50,10 +50,10 @@ const ItemListContainer = () => {
                     stock: 22
                 },
                 {
-                    img: '',
+                    img: './fondo_sm.png',
                     id: 6,
                     name: 'Sombreros',
-                    desc: 'Lorem ipsum',
+                    desc: 'Kevin frankfurter ham pork chop meatloaf. Hamburger bacon pastrami pork swine meatloaf. Venison ball tip brisket t-bone, bresaola boudin buffalo turducken short ribs. Kevin boudin pig, brisket venison andouille strip steak landjaeger ham hock cow frankfurter. Hamburger meatloaf pastrami, tenderloin prosciutto kevin pig porchetta drumstick chicken.',
                     price: '$5.000',
                     stock: 12
                 }
