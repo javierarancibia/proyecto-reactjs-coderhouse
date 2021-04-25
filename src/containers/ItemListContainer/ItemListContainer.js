@@ -62,7 +62,7 @@ const ItemListContainer = () => {
             const list = new Promise((resolve, reject) => {
                 setTimeout(() =>{
                     resolve(products)
-                }, 1000)
+                }, 2000)
             })
             
             list.then((res) => {
