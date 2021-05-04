@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/proyecto-reactjs-coderhouse%E2%80%8B/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/main.cda82f7b.chunk.js",
+    "main.js.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/main.cda82f7b.chunk.js.map",
+    "runtime-main.js": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/runtime-main.5f980f90.js",
+    "runtime-main.js.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/runtime-main.5f980f90.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/proyecto-reactjs-coderhouse%E2%80%8B/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.82ca696f.chunk.js": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/2.82ca696f.chunk.js",
+    "static/js/2.82ca696f.chunk.js.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/2.82ca696f.chunk.js.map",
+    "static/js/3.a22fc273.chunk.js": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/3.a22fc273.chunk.js",
+    "static/js/3.a22fc273.chunk.js.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/3.a22fc273.chunk.js.map",
+    "index.html": "/proyecto-reactjs-coderhouse%E2%80%8B/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/proyecto-reactjs-coderhouse%E2%80%8B/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.82ca696f.chunk.js.LICENSE.txt": "/proyecto-reactjs-coderhouse%E2%80%8B/static/js/2.82ca696f.chunk.js.LICENSE.txt",
+    "static/media/spinner.cc049cab.gif": "/proyecto-reactjs-coderhouse%E2%80%8B/static/media/spinner.cc049cab.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f980f90.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.82ca696f.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.cda82f7b.chunk.js"
+  ]
+}
