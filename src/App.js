@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../src/components/NavBar/NavBar';
 import ItemListContainer from '../src/containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../src/containers/ItemDetailContainer/ItemDetailContainer'
-import {BrowserRouter, Switch, Route, useParams} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
 function App() {
@@ -17,6 +17,9 @@ function App() {
           <main>
             <Route path="/item/:id">
               <ItemDetailContainer />
+            </Route>
+            <Route path="/category/:id">
+              <ItemListContainer />
             </Route>
             <Route exact path="/">
               <ItemListContainer greetingProp='Bienvenidos al E-commerce con ReactJS' />

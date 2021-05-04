@@ -1,5 +1,5 @@
 import React from 'react'
-import Items from './items'
+import Item from './item'
 import { CardColumns } from 'react-bootstrap';
 
 const itemList = ({productos}) => {
@@ -9,7 +9,7 @@ const itemList = ({productos}) => {
         <CardColumns className="mx-5">
             {productos.map((data) => 
                 <div >
-                    <Items id={data.id} img={data.img} name={data.name} desc={data.desc} price={data.price} cantidad={data.stock} />
+                    <Item id={data.id} img={data.img} name={data.name} desc={data.desc} price={data.price} cantidad={data.stock} />
                 </div>
             )}        
         </CardColumns>
