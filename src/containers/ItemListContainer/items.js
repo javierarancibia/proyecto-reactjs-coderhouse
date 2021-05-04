@@ -1,19 +1,22 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
 import Counter from './Counter'
+import {Link} from 'react-router-dom';
 
-const items = ({img, cantidad, name, desc, price}) => {
+const items = ({img, cantidad, name, desc, price, id}) => {
 
-       
+       console.log(id)
     return (
 
             <Card className="mt-5">
-                <Card.Img className="img-fluid mt-5" src={img} style={{height: 450}} alt="imagen"/>
                 <Card.Body>
+                <Link key={id} to={`item/${id}`} >
+                <Card.Img className="img-fluid mt-5" src={img} style={{height: 450}} alt="imagen"/>
                 <Card.Title> {name} </Card.Title>
                 <Card.Text> {desc} </Card.Text>
                 <Card.Text> {price} </Card.Text>
                 <Card.Text> <Counter stock={cantidad}/> </Card.Text>
+                </Link>
                 </Card.Body>
             </Card>
     )

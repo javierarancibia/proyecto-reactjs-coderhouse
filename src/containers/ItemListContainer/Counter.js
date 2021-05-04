@@ -12,7 +12,7 @@ const Counter = ({stock}) => {
         if (totalStock === 0) {
             setDisabledSumar(true)
         } else {
-            setTotalStock(totalStock - 1)
+            setTotalStock((prevStock) => prevStock - 1)
             setItemSuma(itemSuma + 1)
         }
     }
