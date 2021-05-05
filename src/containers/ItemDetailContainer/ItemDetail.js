@@ -18,7 +18,7 @@ const ItemDetail = ({datos}) => {
                 <Card.Body>
                     <Card.Title>{datos.name}</Card.Title>
                     <Card.Text>
-                        {datos.desc}
+                        {datos.desc} - {datos.category}
                     </Card.Text>
                     <Link to={"/"}>Volver a Inicio</Link>
                 </Card.Body>

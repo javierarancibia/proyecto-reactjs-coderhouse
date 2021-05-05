@@ -15,14 +15,14 @@ const NavBar = () => {
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Inicio</Nav.Link>
                     <Nav.Link href="#link">Nosotros</Nav.Link>
-                    <NavDropdown title="Productos" id="basic-nav-dropdown">
-                        <Link to={'/category/:categoryId'}>
+                    <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                        <Link to={'/category/oleo'}>
                             <NavDropdown.Item href="#action/3.1">Oleos</NavDropdown.Item>
                         </Link>
-                        <Link to={'/category/:categoryId'}>
-                            <NavDropdown.Item href="#action/3.2">Acrilicos</NavDropdown.Item>
+                        <Link to={'/category/serigrafia'}>
+                            <NavDropdown.Item href="#action/3.2">Serigrafias</NavDropdown.Item>
                         </Link>
-                        <Link to={'/category/:categoryId'}>
+                        <Link to={'/category/grabado'}>
                             <NavDropdown.Item href="#action/3.3">Grabados</NavDropdown.Item>
                         </Link>    
                     </NavDropdown>

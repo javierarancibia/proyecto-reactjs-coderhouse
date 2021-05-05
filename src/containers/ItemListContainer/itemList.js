@@ -9,7 +9,7 @@ const itemList = ({productos}) => {
         <CardColumns className="mx-5">
             {productos.map((data) => 
                 <div >
-                    <Item id={data.id} img={data.img} name={data.name} desc={data.desc} price={data.price} cantidad={data.stock} />
+                    <Item id={data.id} img={data.img} name={data.name} desc={data.desc} price={data.price} cantidad={data.stock} category={data.category} />
                 </div>
             )}        
         </CardColumns>

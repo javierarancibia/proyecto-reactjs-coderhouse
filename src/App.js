@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '../src/components/NavBar/NavBar';
 import ItemListContainer from '../src/containers/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from '../src/containers/ItemDetailContainer/ItemDetailContainer'
+import CategoryDetailContainer from '../src/containers/ItemDetailContainer/CategoryDetailContainer'
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
@@ -18,8 +19,8 @@ function App() {
             <Route path="/item/:id">
               <ItemDetailContainer />
             </Route>
-            <Route path="/category/:id">
-              <ItemListContainer />
+            <Route path="/category/:category">
+              <CategoryDetailContainer />
             </Route>
             <Route exact path="/">
               <ItemListContainer greetingProp='Bienvenidos al E-commerce con ReactJS' />

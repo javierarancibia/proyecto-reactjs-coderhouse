@@ -1,14 +1,14 @@
 import React,{useState, useEffect} from 'react'
-import ItemDetail from './ItemDetail'
+import CategoryDetail from './CategoryDetail'
 import Spinner from './spinner.gif'
 import { useParams } from 'react-router-dom';
 
-const ItemDetailContainer = () => {
+const CategoryDetailContainer = () => {
 
 
     const [datos, setDatos] = useState([])
-    const { id } = useParams();
-    console.log(id)
+    const { category } = useParams();
+    console.log(category)
         useEffect(() => {
 
             const catalog = [
@@ -75,9 +75,9 @@ const ItemDetailContainer = () => {
             })
             
             getItem.then((res) => {
-                console.log(id)
+                console.log(category)
                 const filtro = res.filter(function(x) {
-                     return x.id == id
+                     return x.category == category
                 })
                 setDatos(filtro)
             })
@@ -89,23 +89,15 @@ const ItemDetailContainer = () => {
                         
         }, [])
 
-    return (
+        return (
 
-        <React.Fragment>
-            <div>
-                {datos.length > 0 ? <ItemDetail datos={datos[0]}/> : <img src={Spinner} />}
-            </div>
-        </React.Fragment>
-    )
+            <React.Fragment>
+                <div>
+                    {datos.length > 0 ? <CategoryDetail datos={datos}/> : <img src={Spinner} />}
+                </div>
+            </React.Fragment>
+        )
 
+    }
 
-
-    
-
-
-
-
-
-}
-
-export default ItemDetailContainer
+    export default CategoryDetailContainer
