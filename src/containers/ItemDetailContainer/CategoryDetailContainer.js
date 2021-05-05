@@ -8,7 +8,7 @@ const CategoryDetailContainer = () => {
 
     const [datos, setDatos] = useState([])
     const { category } = useParams();
-    console.log(category)
+    
         useEffect(() => {
 
             const catalog = [
@@ -87,7 +87,7 @@ const CategoryDetailContainer = () => {
             })
 
                         
-        }, [])
+        }, [category])
 
         return (
 
