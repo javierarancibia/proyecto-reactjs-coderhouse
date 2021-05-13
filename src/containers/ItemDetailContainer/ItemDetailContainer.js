@@ -1,5 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import ItemDetail from './ItemDetail'
+import ItemCountContainer from '../ItemListContainer/ItemCountContainer'
+import {useCartContext} from '../context/CartContext'
 import Spinner from './spinner.gif'
 import { useParams } from 'react-router-dom';
 
@@ -7,8 +9,8 @@ const ItemDetailContainer = () => {
 
 
     const [datos, setDatos] = useState([])
+    const {addItems} = useCartContext()
     const { id } = useParams();
-    console.log(id)
         useEffect(() => {
 
             const catalog = [
@@ -75,7 +77,6 @@ const ItemDetailContainer = () => {
             })
             
             getItem.then((res) => {
-                console.log(id)
                 const filtro = res.filter(function(x) {
                      return x.id == id
                 })
@@ -89,11 +90,17 @@ const ItemDetailContainer = () => {
                         
         }, [])
 
+        const onAdd = (totalStock) => {
+            addItems(totalStock, datos[0])
+        }
+
     return (
 
         <React.Fragment>
             <div>
-                {datos.length > 0 ? <ItemDetail datos={datos[0]}/> : <img src={Spinner} />}
+                {datos.length > 0 ? <ItemDetail datos={datos[0]}/> 
+                   : <img src={Spinner} />}
+                {datos.length > 0 && <ItemCountContainer datos={datos[0]} onAdd={onAdd} />}
             </div>
         </React.Fragment>
     )

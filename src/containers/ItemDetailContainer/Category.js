@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import Counter from '../ItemListContainer/Counter'
+import ItemCount from '../ItemListContainer/ItemCount'
 
 
 const Category = ({id, category, name, img, cantidad, desc, price}) => {
@@ -13,7 +13,7 @@ const Category = ({id, category, name, img, cantidad, desc, price}) => {
                     <Card.Title> {name} - {category} </Card.Title>
                     <Card.Text> {desc} </Card.Text>
                     <Card.Text> {price} </Card.Text>
-                    <Card.Text> <Counter stock={cantidad}/> </Card.Text>
+                    <Card.Text> <ItemCount stock={cantidad}/> </Card.Text>
                 </Link>
             </Card.Body>
         </Card>

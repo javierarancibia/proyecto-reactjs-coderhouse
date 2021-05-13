@@ -3,10 +3,12 @@ import { Card } from 'react-bootstrap';
 import {useParams, Link} from 'react-router-dom'
 
 
+
 const ItemDetail = ({datos}) => {
 
     const myStyle= {  
-        marginTop: "50rem"
+        height: 450,
+        width: 'auto'
     
     }
     const {id} = useParams()
@@ -23,7 +25,7 @@ const ItemDetail = ({datos}) => {
                     <Link to={"/"}>Volver a Inicio</Link>
                 </Card.Body>
                 <Card.Footer className="text-muted">Stock de unidades: {datos.stock}</Card.Footer>
-                <Card.Img src={datos.img} className="img-fluid mt-5 container" alt="imagen" />
+                <Card.Img src={datos.img} style={myStyle} className="img-fluid mt-5 container" alt="imagen" />
             </Card>
     )
 }
