@@ -1,5 +1,7 @@
  
 import React, { useState, useEffect, useContext } from 'react';
+import Spinner from './spinner.gif'
+
 
 export const CartContext = React.createContext([]);
 
@@ -22,6 +24,9 @@ export function CartProvider({ children }) {
     }  
 
     const clear = () => {
+        setTimeout(() => {
+          setItems(true)
+        }, 2000)
         setItems([])
     }
 
