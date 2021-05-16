@@ -1,19 +1,40 @@
-import React from 'react'
+import React, { useState} from 'react'
 import {useCartContext} from './CartContext'
+import { Table } from 'react-bootstrap'
 
 const Cart = () => {
 
-    const {items, totalItems} = useCartContext()
-    console.log(totalItems)
+    const {items, clear} = useCartContext()
+    console.log(items)
     
 
     return (
-        <div className="mt-5">
-            <p className="mt-5"> {items.desc}</p>
-            <p className="mt-5"> {items.stock}</p>
-            <p className="mt-5"> {totalItems}</p>
 
-        </div>
+
+        <React.Fragment>
+            { 
+                items.length > 0 ? (<h2>Carrito vacio</h2>) : 
+                (<Table striped bordered hover className="container mt-5">
+                    <thead>
+                        <tr>
+                        <th></th>
+                        <th>Articulo</th>
+                        <th>Precio Unidad></th>
+                        <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td onClick={() => clear(items)}>X</td>
+                        <td> { items[0].name }</td>
+                        <td>{ items[0].price }</td>
+                        <td>{ items[0].quantity }</td>
+                        </tr>
+                    </tbody>
+                </Table>)
+            }
+
+        </React.Fragment>
     )
 }
 

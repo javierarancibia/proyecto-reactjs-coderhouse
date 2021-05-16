@@ -1,9 +1,14 @@
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {useCartContext} from '../../containers/context/CartContext'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
+
+    const {items} = useCartContext()
+    console.log(items)
+
     return (
         
         <Navbar bg="dark" expand="lg" variant="dark">
@@ -28,7 +33,9 @@ const NavBar = () => {
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
-            <CartWidget />
+            <Link to={'/cart'}> 
+                <CartWidget />{ items.length ? <h2 className="text-white"> {items[0].quantity} items en tu carrito</h2> : <h2>Carrito vacio</h2> }
+            </Link>
         </Navbar>
     )
 }
