@@ -8,7 +8,7 @@ const item = ({img, cantidad, name, desc, price, id, category}) => {
 
             <Card className="mt-5">
                 <Card.Body>
-                    <Link key={id} to={`item/${id}`} >
+                    <Link key={id} to={`/item/${id}`} >
                         <Card.Img className="img-fluid mt-5" src={img} style={{height: 250}} alt="imagen"/>
                         <Card.Title> {name} - {category} </Card.Title>
                         <Card.Text> {desc} </Card.Text>
