@@ -33,7 +33,7 @@ const NavBar = () => {
                 </Nav>
             </Navbar.Collapse>
             <Link to={'/cart'}> 
-                <CartWidget />{ items.length ? <h2 className="text-white"> {cantidadUnidades()} items en tu carrito</h2> : <h2>Carrito vacio</h2> }
+                <CartWidget />{ items.length ? <h2 className="text-white"> {cantidadUnidades()} items en tu carrito - Ir a pagar</h2> : <h2>Carrito vacio</h2> }
             </Link>
         </Navbar>
     )

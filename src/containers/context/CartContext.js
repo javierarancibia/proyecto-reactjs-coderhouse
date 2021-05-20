@@ -18,14 +18,14 @@ export function CartProvider({ children }) {
     
     
     // const inCart = (id) => {
-    //   const alreadyInCart = items.some (x=> x.id = id)
+    //   const alreadyInCart = items.some(x=> x.id != id)
     //   return alreadyInCart
     // }
     
     
-    const addItems = (count, objeto) => {
-      // if (inCart(objeto.id)){
-        
+      const addItems = (count, objeto) => {
+        // if (inCart(objeto.id)){
+        //   alert(objeto.id)
         // }
         setItems([...items, {...objeto, quantity: count}])
         setTotalUnidades(cantidadUnidades)
