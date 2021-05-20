@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
 
 const ItemCount = ({sumar, restar, onAdd, itemSuma, disabledRestar, disabledSumar}) => {
     
@@ -13,7 +12,7 @@ const ItemCount = ({sumar, restar, onAdd, itemSuma, disabledRestar, disabledSuma
                 <Button onClick={sumar} disabledSumar={disabledSumar} variant="outline-danger" className="py-2 px-4">+</Button>
             </div>
             <div className="mb-5">
-                <Link to={'/cart'} onClick={()=> onAdd(itemSuma)}>Añadir al carro</Link>
+                <Button to={'/cart'} onClick={()=> onAdd(itemSuma)}>Añadir al carro</Button>
             </div>
         </React.Fragment>
     )

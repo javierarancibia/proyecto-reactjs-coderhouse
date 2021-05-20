@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
 
-    const {items} = useCartContext()
-    console.log(items)
+    const {items, cantidadUnidades} = useCartContext()
 
     return (
         
@@ -34,7 +33,7 @@ const NavBar = () => {
                 </Nav>
             </Navbar.Collapse>
             <Link to={'/cart'}> 
-                <CartWidget />{ items.length ? <h2 className="text-white"> {items[0].quantity} items en tu carrito</h2> : <h2>Carrito vacio</h2> }
+                <CartWidget />{ items.length ? <h2 className="text-white"> {cantidadUnidades()} items en tu carrito</h2> : <h2>Carrito vacio</h2> }
             </Link>
         </Navbar>
     )

@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
                     id: 1,
                     name: 'Oleo en Tela',
                     desc: 'Bello y colorido grabado efectuado sobre tela, intervenido a mano con lápiz y brillo glitter, titulado "Please Sweetheart". Año 2011. Medidas 50 x 40 cms. (tela).',
-                    price: '$1.100.000',
+                    price: 1100000,
                     category: 'oleo',
                     stock: 6
                 },
@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
                     id: 2,
                     name: 'Grabado color "sin título" II',
                     desc: 'Bello grabado a color numerado y firmado a mano por el destacado maestro chileno Benito Rojo. Dimensiones: 55 x 65 cms. (papel).',
-                    price: '$350.000',
+                    price: 350000,
                     category: 'grabado',
                     stock: 8
                 },
@@ -37,7 +37,7 @@ const ItemDetailContainer = () => {
                     id: 3,
                     name: 'Grabado color "sin título" III',
                     desc: 'Extraordinario grabado a color numerado y firmado a mano por el destacado maestro chileno Benito Rojo. Dimensiones: 56 x 67,5 cms. (papel).',
-                    price: '$350.000',
+                    price: 350000,
                     category: 'grabado',
                     stock: 10
                 },
@@ -46,7 +46,7 @@ const ItemDetailContainer = () => {
                     id: 4,
                     name: 'Serigrafía color "Prelunio en el volcán',
                     desc: 'Extraordinaria serigrafía a color numerada y firmada a mano por el destacado artista cubano chileno, ganador del Premio Nacional de Artes Plásticas, Mario Carreño. Titulada "Prelunio en el volcán". Dimensiones: 75 x 55 cms. (papel).',
-                    price: '$750.000',
+                    price: 750000,
                     category: 'serigrafia',
                     stock: 15
                 },
@@ -55,7 +55,7 @@ const ItemDetailContainer = () => {
                     id: 5,
                     name: 'Oleo a color "Sin título"',
                     desc: 'Hermosa aguafuerte a color firmada a mano por el destacado artista y profesor chileno Ernesto Banderas. Dimensiones: 24 x 21 cms. (papel) y con marco 53 x 50 cms.',
-                    price: '$200.000',
+                    price: 200000,
                     category: 'oleo',
                     stock: 22
                 },
@@ -64,7 +64,7 @@ const ItemDetailContainer = () => {
                     id: 6,
                     name: 'Serigrafia a color intervenido a mano en gran formato "Pan"',
                     desc: 'Representativo grabado a color intervenido a mano con lápiz pastel titulado "Pan". Firmado a mano por el destacado artista, galardonado con el Premio Nacional de Artes Plásticas, José Balmes Parramón. Año 2013. Dimensiones: 80 x 80 cms.',
-                    price: '$850.000',
+                    price: 850000,
                     category: 'serigrafia',
                     stock: 12
                 }
@@ -92,6 +92,7 @@ const ItemDetailContainer = () => {
 
         const onAdd = (totalStock) => {
             addItems(totalStock, datos[0])
+            
         }
 
     return (

@@ -3,7 +3,6 @@ import Item from './item'
 import { CardColumns } from 'react-bootstrap';
 
 const itemList = ({productos}) => {
-    console.log(productos)
 
 
     return (
