@@ -60,8 +60,8 @@ export function CartProvider({ children }) {
         setItems(items.filter((x)=>x.id != id))
         console.log(items)
       }
-      
-        
+
+             
         
       
     return (

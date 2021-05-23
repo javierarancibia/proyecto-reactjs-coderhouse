@@ -18,10 +18,10 @@ function App() {
           </header>
           <Switch>
             <main>
-              <Route path="/item/:id">
+              <Route path="/item/:itemId">
                 <ItemDetailContainer />
               </Route>
-              <Route path="/category/:category">
+              <Route path="/category/:categoryId">
                 <ItemListContainer />
               </Route>
               <Route path="/cart">

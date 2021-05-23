@@ -3,9 +3,9 @@ import ItemCount from './ItemCount'
 // import {useCartContext} from '../Context/CartContext'
 
 
-const ItemCountContainer = ({datos, onAdd}) => {
+const ItemCountContainer = ({items, onAdd}) => {
 
-        const [totalStock, setTotalStock] = useState(datos.stock)
+        const [totalStock, setTotalStock] = useState(items.stock)
         const [itemSuma, setItemSuma] = useState(0)
         const [disabledRestar, setDisabledRestar] = useState(false)
         const [disabledSumar, setDisabledSumar] = useState(false)

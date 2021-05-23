@@ -1,6 +1,7 @@
 import React, { useState} from 'react'
 import {useCartContext} from './CartContext'
 import { Table, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
 
@@ -18,7 +19,7 @@ const Cart = () => {
 
         <React.Fragment>
             { 
-                !items.length > 0 ? (<h2 data-aos="fade-right" data-aos-easing="ease-in-out">Carrito vacio</h2>) : 
+                !items.length > 0 ? (<Link to={'/'}><h2 data-aos="fade-right" data-aos-easing="ease-in-out">Carrito vacio - Ir a pagina principal</h2></Link>) : 
                 (<Table striped bordered hover className="container mt-5" data-aos="fade-right" data-aos-easing="ease-in-out">
                     <thead>
                         <tr>
@@ -27,6 +28,7 @@ const Cart = () => {
                         <th>Articulo</th>
                         <th>Precio Unidad</th>
                         <th>Cantidad</th>
+                        <th>Subtotal</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,6 +39,7 @@ const Cart = () => {
                             <td>{x.name}</td>
                             <td>{x.price}</td>
                             <td>{x.quantity}</td>
+                            <td>{x.quantity * x.price}</td>
                         </tr>
                         )}
                     </tbody>
