@@ -9,31 +9,53 @@ const ItemListContainer = () => {
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(false)
     const {categoryId} = useParams();
-    console.log(categoryId)
 
         useEffect(() => {
 
-            setLoading(true)
-            const db = getFirestore();
-            const itemsCollection = db.collection("items");
-            itemsCollection.get()
-                .then((querySnapShot) => {
-                    querySnapShot.size === 0 && alert("No hay items") 
-                    const documentos = querySnapShot.docs.map((doc) => {
-                        return {
-                            id: doc.id,
-                            ...doc.data()
-                        }}
-                    )
+                setLoading(true)
+                const db = getFirestore();
+                const itemsCollection = db.collection("items");
+
+                if (typeof categoryId == 'undefined') {
+                       
+                    itemsCollection.get()
+                    .then((querySnapShot) => {
+                        querySnapShot.size === 0 && alert("No hay items") 
+                        const documentos = querySnapShot.docs.map((doc) => {
+                            return {
+                                id: doc.id,
+                                ...doc.data()
+                            }}
+                            )                        
+                            
+                            setItems(documentos)
+                        })
+                        .catch((err) => console.log(err))
+                        .finally(() => setLoading(false))
                         
+                } else  { 
+                    itemsCollection.where('categoryId', '==', categoryId).get()
+                    .then((querySnapShot) => {
+                        querySnapShot.size === 0 && alert("No hay items") 
+                        const documentos = querySnapShot.docs.map((doc) => {
+                            return {
+                                id: doc.id,
+                                ...doc.data()
+                            }}
+                            )                        
+                            
+                            setItems(documentos)
+                        })
+                        .catch((err) => console.log(err))
+                        .finally(() => setLoading(false))
+                }
+                    
+            }
                         
-                    setItems(documentos)
-                    console.log(documentos)
-                })
-                .catch((err) => console.log(err))
-                .finally(() => setLoading(false))
-                        
-        }, [])
+        , [items])
+
+
+
 
         useEffect(() => {
             items.length && setLoading(false);

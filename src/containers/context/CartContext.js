@@ -57,7 +57,7 @@ export function CartProvider({ children }) {
       }
 
       const deleteItem = (id) => {
-        setItems(items.filter((x)=>x.id != id))
+        setItems(items.filter((x)=>x.id !== id))
         console.log(items)
       }
 
