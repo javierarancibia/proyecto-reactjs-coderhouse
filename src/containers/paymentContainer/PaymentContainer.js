@@ -25,10 +25,7 @@ const PaymentContainer = () => {
         const orders = db.collection("orders")
         const newOrder = {
             buyer: userInfo,
-            items: {
-                id: items[0].id,
-                title: items[0].name,
-            },
+            items: items,
             total: precioFinal(),
             date: firebase.firestore.Timestamp.fromDate(new Date()), 
 

@@ -6,7 +6,7 @@ import ItemCount from './ItemCount'
 const ItemCountContainer = ({items, onAdd}) => {
 
         const [totalStock, setTotalStock] = useState(items.stock)
-        const [itemSuma, setItemSuma] = useState(0)
+        const [itemSuma, setItemSuma] = useState(1)
         const [disabledRestar, setDisabledRestar] = useState(false)
         const [disabledSumar, setDisabledSumar] = useState(false)
     
