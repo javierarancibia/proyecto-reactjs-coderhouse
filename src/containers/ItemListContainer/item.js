@@ -12,7 +12,7 @@ const item = ({img, cantidad, name, desc, price, id, category}) => {
                         <Card.Img className="img-fluid mt-5" src={img} style={{height: 250}} alt="imagen"/>
                         <Card.Title> {name} - {category} </Card.Title>
                         <Card.Text> {desc} </Card.Text>
-                        <Card.Text> {price} </Card.Text>
+                        <Card.Text> $ {price} </Card.Text>
                     </Link>
                 </Card.Body>
             </Card>

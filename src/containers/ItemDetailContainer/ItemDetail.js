@@ -17,7 +17,7 @@ const ItemDetail = ({items}) => {
     return (
         
             <Card className="text-center">
-                <Card.Header className="h3">{items.price}</Card.Header>
+                <Card.Header className="h3">$ {items.price}</Card.Header>
                 <Card.Body>
                     <Card.Title>{items.name}</Card.Title>
                     <Card.Text>
