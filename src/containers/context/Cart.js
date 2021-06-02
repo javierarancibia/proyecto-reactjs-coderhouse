@@ -12,6 +12,7 @@ const Cart = () => {
         cursor:'pointer'
     }
 
+  
      console.log(items)
 
     return (
@@ -45,6 +46,7 @@ const Cart = () => {
                     </tbody>
                     <h2>Precio final: ${ precioFinal()}</h2>
                     <Button onClick={() => clear()} style={myStyle}>Vaciar Carrito</Button>
+                    <Link to={'/payment'} className="mt-5" >Realizar Pago</Link>
                 </Table>)
             }
 
