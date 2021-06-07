@@ -12,12 +12,17 @@ const ItemDetailContainer = () => {
     const [items, setItems] = useState([])
     const {addItems} = useCartContext()
     const { itemId } = useParams();
+    const [loading, setLoading] = useState(false)
 
 
         useEffect(() => {
+            setTimeout(() =>{
+                setLoading(true)
+            }, 1000)
 
+            
             const db = getFirestore();
-
+            
             const itemCollection = db.collection("items");
             const item = itemCollection.doc(itemId)
             
@@ -26,35 +31,37 @@ const ItemDetailContainer = () => {
                     console.log("Item no existe")
                     return;
                 }  
-                setItems({ id: doc.id, ...doc.data() });
+                setItems({ id: doc.id, stock: doc.stock - items.quantity,...doc.data() });
                 console.log(items)
             })
             .catch((err)=>{console.log("error:", err)})
+            
 
-
-
-                        
+            
+            
         }, [])
-
+        
         const onAdd = (totalStock) => {
             addItems(totalStock, items)
-            
+    
         }
+        
+        return ( 
+            <React.Fragment>
+                <div>
+                    { loading ? <div><ItemDetail items={items}/><ItemCountContainer items={items} onAdd={onAdd} /></div> : <img src={Spinner} />}
+                </div> 
+            </React.Fragment>
 
-    return (
+        )
+}
 
-        <React.Fragment>
-            <div>
-                <ItemDetail items={items}/> 
-                <ItemCountContainer items={items} onAdd={onAdd} />
-            </div>
-        </React.Fragment>
-    )
+    
+export default ItemDetailContainer
+
+   
                    
 
-    // : <img src={Spinner} />}
-
-    // {items.length > 0 && <ItemCountContainer items={items} onAdd={onAdd} />}
 
 
 
@@ -63,7 +70,3 @@ const ItemDetailContainer = () => {
 
 
 
-
-}
-
-export default ItemDetailContainer

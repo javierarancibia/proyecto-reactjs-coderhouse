@@ -3,6 +3,7 @@ import ItemList from './itemList'
 import Spinner from './spinner.gif'
 import { useParams } from 'react-router-dom';
 import { getFirestore } from '../../firebase'
+import { Jumbotron, Button } from 'react-bootstrap'
 
 const ItemListContainer = () => {
 
@@ -50,21 +51,20 @@ const ItemListContainer = () => {
                         .finally(() => setLoading(false))
                 }
                     
-            }
-                        
-        , [items])
+        }, [])
 
-
-
-
-        useEffect(() => {
-            items.length && setLoading(false);
-        }, [items])
+      
 
     return (
 
         <React.Fragment>
-            <h1 className="mt-5"> Galeria Digital</h1>
+            <Jumbotron>
+                <h1>Galeria Digital</h1>
+                <p>Encuentre obras de arte de reconocidos artistas locales</p>
+                <p>
+                </p>
+            </Jumbotron>
+
             <div>
                 {items.length > 0 ? <ItemList key={items.id} productos={items}/> : <img src={Spinner} />}
             </div>
