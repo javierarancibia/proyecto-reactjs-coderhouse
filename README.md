@@ -7,11 +7,11 @@ Ecommerce
 
 ### Pasos para instalación 
 
-_1.- Clonar repositorio "git clone https://github.com/javierarancibia/proyecto-reactjs-coderhouse"
-_2.- Ejecutar en terminal "npm install" (instalacion de dependencias de node)
-_3.- Instalar Firebase en terminal: npm install --save firebase
-_4.- Instalar libreria de animación con Javascript AOS: npm install aos --save
-_5.- Inicializar app en terminal: npm start
+_1.- Clonar repositorio "git clone https://github.com/javierarancibia/proyecto-reactjs-coderhouse"_
+_2.- Ejecutar en terminal "npm install" (instalacion de dependencias de node)_
+_3.- Instalar Firebase en terminal: npm install --save firebase_
+_4.- Instalar libreria de animación con Javascript AOS: npm install aos --save_
+_5.- Inicializar app en terminal: npm start_
 
 ### Demo en formato GIF
 
