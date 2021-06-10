@@ -2,10 +2,18 @@
 
 _Acá va un párrafo que describa lo que es el proyecto_
 
-## Comenzando 🚀
+## Pasos para instalar clonando el repositorio 🚀
 
-*Clonar repositorio "git clone https://github.com/javierarancibia/proyecto-reactjs-coderhouse"
-*Ejecutar en terminal "npm install" (instalacion de dependencias de node)
+*Clonar repositorio 
+```
+git clone https://github.com/javierarancibia/proyecto-reactjs-coderhouse
+```
+
+*Ejecutar en terminal (instalacion de dependencias de node)
+```
+npm install
+```
+
 *Instalar Firebase en terminal: 
 ```
 npm install --save firebase_
