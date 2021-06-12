@@ -1,6 +1,6 @@
 # Galeria Digital - React JS
 
-_App de ecommerce de fantasía dedicado a la venta de arte de autor. _
+App de ecommerce de fantasía dedicado a la venta de arte de autor
 
 ## Pasos para instalar clonando el repositorio 🚀
 
