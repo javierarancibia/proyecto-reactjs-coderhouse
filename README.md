@@ -1,6 +1,6 @@
 # Galeria Digital - React JS
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_App de ecommerce de fantasía dedicado a la venta de arte de autor. _
 
 ## Pasos para instalar clonando el repositorio 🚀
 
