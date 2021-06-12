@@ -51,7 +51,7 @@ const ItemListContainer = () => {
                         .finally(() => setLoading(false))
                 }
                     
-        }, [])
+        }, [items])
 
       
 

@@ -11,7 +11,6 @@ export const Payment = ({items, handleUser, precioFinal, submit, orderId, userIn
                     <Table striped bordered hover className="container mt-5" data-aos="fade-right" data-aos-easing="ease-in-out">
                         <thead>
                             <tr>
-                            <th></th>
                             <th>Descripcion</th>
                             <th>Articulo</th>
                             <th>Precio Unidad</th>
@@ -41,11 +40,33 @@ export const Payment = ({items, handleUser, precioFinal, submit, orderId, userIn
                             <Col>
                                 <Form.Control placeholder="Apellido" type="text" className="mb-2" name="apellido" />
                             </Col>
+                            <Col>
+                                <Form.Control placeholder="Correo Electronico" type="text" className="mb-2" name="correo" />
+                            </Col>
                         </Row>
                         <Button className="my-5" type="submit" onClick={submit}>Ingresa la Info</Button>
                     </Form>           
 
-                   { orderId && <ul><li>Numero de orden: {orderId}</li><li>Nombre: {userInfo.nombre}</li><li>Apellido: {userInfo.apellido}</li></ul> }
+                   { orderId && <React.Fragment>
+
+                                    <Table striped bordered hover className="container mt-5" data-aos="fade-right" data-aos-easing="ease-in-out">
+                                        <thead>
+                                            <tr>
+                                            <th>Numero de Orden</th>
+                                            <th>Nombre</th>
+                                            <th>Apellido</th>
+                                            <th>Correo Electronico</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <td>{orderId}</td>
+                                            <td>{userInfo.nombre}</td>
+                                            <td>{userInfo.apellido}</td>
+                                            <td>{userInfo.correo}</td>
+                                        </tbody>
+                                    </Table>
+                                </React.Fragment> 
+                       }
                     
                 
                 
